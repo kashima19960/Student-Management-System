@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="GBK">
+    <title>查找指定的学生</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-image: url(./君名.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        input[type="text"] {
+            width: 200px;
+            height: 30px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            width: 120px;
+            height: 30px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            color: white;
+        }
+
+        input[value="精确查询"] {
+            background-color: red;
+        }
+
+        input[value="模糊搜索"] {
+            background-color: blue;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .button-container a {
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 5px 10px;
+            margin: 5px;
+            background-image: linear-gradient(to right, #0849ebf5, #e6134f);
+            text-decoration: none;
+            font-size: 18px;
+            text-align: center;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>请输入您想查询的学生的学号或者是姓名</h1>
+    <form action="./search.php" method="post">
+        <input type="text" name="id">
+        <br>
+        <input type="submit" value="精确查询" name="exact">
+        <input type="submit" value="模糊搜索" name="fuzzy">
+    </form>
+    <br>
+    <h4 style="text-align: center;color: red;">!!!注意:模糊搜索只能通过输入学生的姓名进行搜索，精确搜索只能通过输入学生的学号进行搜索</h4>
+    <div class="button-container">
+        <a href="./index.html">返回</a>
+    </div>
+
+</body>
+
+</html>

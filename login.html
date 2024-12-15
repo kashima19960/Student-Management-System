@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="GBK">
+    <title>login</title>
+    <style type="text/css">
+        body {
+            /* ???????? */
+            background-image: url(./君名.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .Login {
+            width: 600px;
+            height: 350px;
+            background: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 5px rgba(3, 60, 245, 0.4);
+            background: transparent;
+        }
+
+        form {
+            margin: 25px 140px;
+        }
+
+        h1 {
+            margin-top: 35px;
+            text-align: center;
+            font-size: 40px;
+            color: #000000;
+        }
+
+        input {
+            width: 220px;
+            height: 30px;
+            background: transparent;
+            margin-top: 30px;
+            border: none;
+            border-bottom: 1px #a77a27 solid;
+            outline: none;
+            color: #000000;
+            font-size: 17px;
+            margin-left: 10px;
+        }
+
+        .anniu {
+            width: 98px;
+            height: 25px;
+            border: black;
+            margin-top: 50px;
+            color: white;
+            text-align: center;
+            line-height: 30px;
+            background-image: linear-gradient(to right, #0849ebf5, #e6134f);
+            border-radius: 20px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        label {
+            font-size: 18px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Login">
+        <h1>登陆</h1>
+        <form action="./login.php" method="POST">
+            <label for="username">
+                username<input type="text" name="user" id="usename" placeholder="请输入用户名">
+            </label>
+            <label for="password">
+                password<input type="password" name="pwd" id="password" placeholder="请输入密码">
+            </label>
+            <input type="submit" value="登陆" class="anniu">
+            <!-- <button type="button" id="btn" value="注册" class="anniu">注册</button> -->
+        </form>
+        <script>
+            var a = document.getElementById("btn");
+            a.onclick = function () {
+                window.location.href = "register.html"
+            }
+        </script>
+    </div>
+</body>
+
+</html>

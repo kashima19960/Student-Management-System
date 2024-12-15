@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="GBK">
+    <title>主界面功能</title>
+    <style>
+        body {
+            background-image: url(./君名.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .center-links {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .center-links a {
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 5px;
+            margin: 5px;
+            background-image: linear-gradient(to right, #0849ebf5, #e6134f);
+            text-decoration: none;
+            font-size: 32px;
+            color: black;
+        }
+
+        .author {
+            text-align: center;
+            color: red;
+            position: fixed;
+            bottom: 0px;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;color: white;">学生管理系统</h1>
+    <div class="center-links">
+        <div class="row">
+            <a href="./overview.php" target="_self">查看所有学生</a>
+            <br>
+            <a href="./add.html" target="_self">添加新的学生</a>
+            <br>
+            <a href="./search.html" target="_self">查询指定的学生</a>
+            <br>
+            <a href="./login.html">返回登陆界面</a>
+        </div>
+    </div>
+
+    <div class="author">
+        contact:CodingCV@outlook.com
+    </div>
+
+</body>
+
+</html>
