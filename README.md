@@ -38,3 +38,4 @@
 
 ## 其他
 更多的内容请参考我写的这篇[博客](https://kashima19960.github.io/2024/07/30/mysql+php+html%E5%AE%9E%E7%8E%B0%E5%AD%A6%E7%94%9F%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/?highlight=m)，其他内容不再赘述。
+如果你访问不了，尝试这个[国内特供](https://blog.csdn.net/m0_73366745/article/details/140802055?spm=1001.2014.3001.5501)
