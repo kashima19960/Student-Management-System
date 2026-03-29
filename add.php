@@ -1,8 +1,6 @@
 <?php
-$conn = new mysqli("localhost", "root", "root", "xscj") or die("Á¬½ÓÊ§°Ü");
-$conn->query("SET NAMES gbk");
+require_once __DIR__ . '/db_connect.php';
 ?>
-
 <html>
 
 <head>

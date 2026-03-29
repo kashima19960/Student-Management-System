@@ -1,6 +1,5 @@
 <?php
-$conn = new mysqli("localhost", "root", "root", "xscj") or die("Á¬½ÓÊ§°Ü");
-$conn->query("SET NAMES gbk");
+require_once __DIR__ . '/db_connect.php';
 
 $number = $_GET['ID'];
 $sql = "delete from xs where Ñ§ºÅ=$number";

@@ -2,8 +2,7 @@
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-$conn = new mysqli("localhost", "root", "root") or die("Á¬½ÓÊ§°Ü: " . $conn->connect_error);
-$conn->query("set names gbk");
+require_once __DIR__ . '/db_connect.php';
 $username = $_POST['user'];
 $password = $_POST['pwd'];
 $sql = "select * from mysql.user where User='$username' and Password='$password'";
